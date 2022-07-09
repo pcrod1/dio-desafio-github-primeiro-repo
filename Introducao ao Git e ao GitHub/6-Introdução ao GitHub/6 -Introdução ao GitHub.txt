@@ -1,0 +1,20 @@
+6-Introdução ao GitHub
+
+--------------------------------------------------------------------------------------------
+
+. Trabalhando com o GitHub
+  . Lista configuração: 
+    - git config --list
+  . Muda email do usuário: 
+    - git config --global --unset user.email;
+  . Muda nome do usuário:   
+    - git config --global --unset user.name;
+
+. GitHub(instalação):
+  . Criação:
+    - Nome - publico/privado - readme(se não foi criado antes, ele cria agora, ou não);
+  . Na próxima página:
+    - Pegar endereço(link) da conta do github;
+  . Comando do bash:
+    - git remote add origin(alias) https://...(link da conta);
+    - git push -u origin master;

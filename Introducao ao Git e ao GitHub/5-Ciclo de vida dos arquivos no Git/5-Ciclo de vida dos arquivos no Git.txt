@@ -1,0 +1,43 @@
+5-Ciclo de vida dos arquivos no Git
+
+--------------------------------------------------------------------------------------------
+
+. Git init: cria um repositório
+
+. Modified: 
+  - Estado de um arquivo que já estava sendo monitorado (tracked) pelo serviço do Git e que foi alterado por uma edição do usuário;
+
+. Unmodified: 
+  - Estado de um arquivo que já está sendo monitorado (traked) pelo serviço do Git mas que ainda não sofreu alteração pelo usuário desde o último commit;
+
+. Tracked: 
+  - Arquivos que estão sendo monitorados pelo Git, incluídos pelo comando git add;
+
+. Untracked: 
+  - O git não sabe da existencia desse arquivo, ele não está sendo monitorado pelo git;
+  - Precisa do comando "git add" para passar a ser processado pelo serviço de monitoração do git, após esse comando o arquivo entra para o estado Staged;
+
+. Staged: 
+  - Arquivos que serão processados pelo Git e irão para o repositório local, estão aguardando pelo commit;
+
+. Commit:
+  - Todos os arquivos monitorados são resetados após processados pelo Git, passando para unmodified;
+
+. Ambiente de Desenvolvimento:
+  - Tudo que está na nossa máquina, na pasta de trabalho; 
+  - Working Directory - Staging Area - Local Repository
+
+. Commit:
+  - Deve ser executado antes de Clonar o Repositório Local no Repositório Remoto;
+  - Agrega todos os arquivos monitorados, no estado staged, para o repositório local, sendo processados pelo Git;
+  - Após o commit todos os arquivos vão para o estado "unmodified";
+
+. Unstage: 
+  - Git restore --staged <file> 
+--------------------------------------------------------------------------------------------
+ 
+Resumo:
+ . Repositório Local:
+   - Pasta do Git com os arquivos processados pelo comando "commit";
+   - Contém os dados relativos aos arquivos da pasta de trabalho que está sendo monitorada pelo serviço que atende ao Git;
+   - Após o último commit realizado com sucesso o Repósitório Local fica em um estado que possibilita a clonagem para um Repositório Remoto;  

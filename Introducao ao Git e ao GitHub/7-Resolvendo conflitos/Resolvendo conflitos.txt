@@ -1,0 +1,14 @@
+7 -resolvendo conflitos
+
+- Se uma versão diferente se encontra no repositório remoto, o push do repositório local
+  pode gerar um erro, sendo necessário uma correção manual do arquivo alterado.
+- Deve-se realiza um pull (git pull origin master). Esse comando tenta realizar um merge
+  do arquivo local com o arquivo remoto que possui a modificação não presente no arquivo 
+  local.
+- O aquivo deve ser editado manualmente para correção, mantendos as alterações remotas, ou
+  não.
+- Após as correções necessárias:
+  . Executar:
+    - git add *;
+    - git commit ... ;
+    - git push origin master;  

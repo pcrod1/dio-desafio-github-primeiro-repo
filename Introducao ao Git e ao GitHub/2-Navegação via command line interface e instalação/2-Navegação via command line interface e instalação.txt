@@ -1,0 +1,44 @@
+2- Navegação via command line interface (CLI) e instalação
+
+--------------------------------------------------------------------------------------------
+1 - Comandos básicos para um bom desempenho no terminal:
+
+. O Git não possui interface gáfica (GUI), se utiliza do CLI e todos os comandos são digitados na tela de console;
+
+. Comandos do CLI:
+  - Mudar de pastas;
+  - Listar as pastas;
+  - Criar pastas/arquivos;
+  - Deletar pastas/arquivos;
+
+. Comando                      Windows     Linux
+  
+  mudar diretorio              cd          cd
+  listar a pasta               dir         ls
+  limpar a tela                cls         clear(CTR+L)
+  Auto completar               TAB         TAB
+  criar diretorio              mkdir       mkdir
+  deletar arquivos             del         rm 
+  deletar pasta                rmdir /S /Q rm -rf (f - force yes)
+
+--------------------------------------------------------------------------------------------
+2 - Realizando a instalação do Git:
+
+. Site: https://git-scm.com/
+
+. Usar Opção: Git Credential Manager CoreCore (pode dar problemas se não for usada)
+
+. Linux:
+  - Para a última versão estável:
+    . apt-get install git;
+  - Para a última versar usar (usar sudo): 
+    . add-apt-repository ppa:git-core/ppa 
+    . apt update; 
+    . sudo apt install git.
+
+. MacOS:
+  - HomeBrew (Instalador de pacote do MAC);
+  - brew install git
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------

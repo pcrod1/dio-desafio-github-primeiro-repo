@@ -1,0 +1,69 @@
+3 - Entendendo como o Git funciona por baixo dos panos
+
+--------------------------------------------------------------------------------------------
+1 - Tópicos fundamentais para entender o funcionamento do Git:
+
+. Entendendo como o Git funciona por baixo dos panos:
+
+ - SHA1(criado pela Agencia de Segurança Nacional dos EUA - ASN):
+   . Secure Hash Algorithm - Agência de Segurança dos Estados Unidos;
+   . Encriptação gera conjunto de caracteres indentificador de 40 dígitos;
+   . É uma forma curta de representar um arquivo.
+   . echo "ola mundo" | openssl sha1
+     - (stdin)= f9fc856e559b950175f2b7cd7dad61facbe58e7b (40 caracteres)
+
+ - Objetos fundamentais
+ - Sistema distribuído:
+ - Segurança:
+
+--------------------------------------------------------------------------------------------
+2 - Objetos internos do Git:
+
+. Objetos do Git: BLOBS - TREES - COMMITS
+
+. BLOBS: contém SHA1 do arquivo;
+  - blob
+    tamanho\0
+
+. TREES: armazenam BLOBS
+  - TREE
+    \0
+    BLOB sA4d8s texto.txt 
+  - Recursivo
+
+. Commit: tree - parent - autor - mensagem - timestamp
+  - COMMIT -> TREE -> BLOB 1
+                   -> BLOB 2
+                   -> BLOB 3
+                       ...
+                   -> BLOB n
+
+--------------------------------------------------------------------------------------------
+3 - Chave SSH e Token:
+
+Obs: 
+  - Sempre que o comando de criação de chaves(ssh-keygen) for usado, deve-se rodar novamente o agente(eval $(ssh-agent -s)) e adicionar a chave privada(ssh-add) que foi criada.
+ 
+. Comandos: 
+  - 1: ssh-keygen: cria achaves;
+  - 2: eval $(ssh-agent -s): incia o serviço de background do ssh;
+  - 3: ssh-add: adiciona uma chave para o serviço ssh-agent utilizar;
+  
+. Criar as chaves SSH;
+   1. ssh-keygen -t ed25519 -C pc_rod@yahoo.com;
+   2. Fornecer o local onde serão armazenadas as chaves públicas/privadas;
+   3. Local padrão: c:/users/"user"/.ssh
+   4. Fornecer uma senha;
+   5. redigitar, confirmando a senha;
+*  6. Executar o agente(serviço background) SSH: eval $(ssh-agent -s)
+   7. Dentro da pasta das chaves digitar: ssh-add id_ed25519;
+   8. Fornecer a senha que foi inserida na criação das chaves:
+   9. O ssh-add associa a chave privada criada pelo ssh-keygen com o serviço de background ssh-agent;
+
+
+. Chave SSH: chave pública e chave privada
+
+. Token:
+
+--------------------------------------------------------------------------------------------
+ 

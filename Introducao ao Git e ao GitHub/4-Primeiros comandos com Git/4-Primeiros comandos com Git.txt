@@ -1,0 +1,28 @@
+4-Primeiros comandos com Git
+
+1 - Iniciando o Git e criando um commit
+--------------------------------------------------------------------------------------------
+. Comandos:
+  - git init; 
+  - git add;
+  - git commit;
+
+. Comandos Git:
+  - Iniciar o repositório: git init;
+  - Iniciar o versionamento: git add;
+  - Criar um commit: git commit (-m "mensagem lembrete");
+
+
+. git config --global user.email "email"
+. git config --global user.name 
+
+. Teste com arquivos MarkDown:
+  - Livro de receitas
+
+1 - git init
+2 - git config --global user.email
+3 - git config --global user.name
+--------------------------------------------------------------------------------------------
+pasta .git
+
+- hooks, info, objects, refs

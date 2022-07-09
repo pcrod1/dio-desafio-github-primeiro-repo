@@ -1,0 +1,19 @@
+1- Entendendo o que é Git e sua importância
+--------------------------------------------------------------------------------------------
+
+. Git (opensource - free):
+  - Permite acompanhar a evolução do desenvolvimento do software. Mantendo sempre a versão estável até aquele momento e, antes de cada modificação/inclusão, guardando cópias que podem ser utilizadas para recomeçarmos se algo der errado. Teremos sempre um ponto anterior a qualquer modificação, ou adição de funcionalidades, que poderemos restabelecer em caso de problemas com a modificação/inclusão mais recentes. Pode-se manter um histórico de todo o desenvolvimento para consultas.  
+  - Softwares semelhantes ao Git: BitKeeper, CVS, Subversion
+
+. GitHub (tem planos pagos):
+  - Local remoto destinado ao armazenamento dos arquivos gerados pelo Git (repositório on line), mantido pela Microsoft;  
+  - Softwares semelhantes ao GitHub:   
+
+. Git + GitHub vantagens:
+  - Controle de versão;
+  - Armazenamento em nuvem;
+  - Trabalho em equipe;
+  - Melhorar seu código;
+  - Reconhecimento(GitHub rede social - exposição/divulgação do seu trabalho).
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
